@@ -1,0 +1,35 @@
+/project_root
+│
+├── /assembled_files/          # Carpeta donde se ensamblan los archivos finales
+│   └── file_1.txt             # Ejemplo de archivo ensamblado
+│   └── file_2.jpg             # Otro ejemplo de archivo ensamblado
+│   └── file_3.mp4             # Otro archivo ensamblado
+│
+├── /shared_files/             # Carpeta donde se almacenan los archivos que el Nodo está compartiendo
+│   └── file_1.txt             # Ejemplo de archivo compartido
+│   └── file_2.jpg             # Otro ejemplo de archivo compartido
+│   └── file_3.mp4             # Otro archivo compartido
+│
+├── /torrents/                 # Carpeta donde se almacenan los archivos .torrent generados
+│   └── file_1.txt.torrent     # Ejemplo de archivo torrent
+│   └── file_2.jpg.torrent     # Otro ejemplo de archivo torrent
+│   └── file_3.mp4.torrent     # Otro archivo torrent
+│
+├── /torrents_downloaded/      # Carpeta donde se almacenan los archivos torrent descargados
+│   └── file_1.txt.torrent     # Ejemplo de archivo torrent descargado
+│   └── file_2.jpg.torrent     # Otro ejemplo de archivo torrent descargado
+│   └── file_3.mp4.torrent     # Otro archivo torrent descargado
+│
+├── /tracker/                  # Carpeta que contiene el código del Tracker
+│   ├── tracker.py             # Código del servidor Tracker (Flask)
+│   ├── /torrents/             # Carpeta donde el Tracker guarda los torrents
+│   └── /shared_files/         # Carpeta donde el Tracker guarda los archivos compartidos
+│
+├── /node/                     # Carpeta que contiene el código del Nodo
+│   ├── node.py                # Código del cliente Nodo
+│   ├── /torrents/             # Carpeta donde el Nodo guarda los torrents generados
+│   ├── /shared_files/         # Carpeta donde el Nodo guarda los archivos que comparte
+│   └── /assembled_files/      # Carpeta donde el Nodo ensambla los archivos descargados
+│
+└── /myenv/                    # Entorno virtual (si estás utilizando uno, opcional)
+    └── ...                    # Archivos del entorno virtual
